@@ -115,3 +115,16 @@ hr {
     margin-right: 45px;
     margin-left: 45px;
 }
+
+footer {
+    height: 200px;
+    background: linear-gradient(to right, #8E0CFF, #FF4600);
+}
+
+#BarelySmoothTextInFooter {
+    font-size: 55px;
+    padding-top: 70px;
+    padding-left: 100px;
+    color: white;
+    text-decoration: none;
+}
