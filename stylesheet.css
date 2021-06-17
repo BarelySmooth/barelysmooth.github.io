@@ -62,8 +62,8 @@ body {
 }
 
 #intro {
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 100px;
+    margin-left: 45px;
     margin-bottom: 80px;
     padding: 55px;
     width: 55%;
@@ -74,6 +74,19 @@ body {
     font-size: 35px;
     font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #6598FF, #C70AFF);
+}
+
+#intro-back {
+    margin-top: 70px;
+    margin-left: 90px;
+    margin-bottom: 80px;
+    z-index: -1;
+    width: 55%;
+    height: 300px;
+    border-style: hidden;
+    position: fixed;
+    border-radius: 30px;
+    background: linear-gradient(to right, #adff29, #0a53ff);
 }
 
 #close_intro_button {
