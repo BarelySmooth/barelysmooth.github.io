@@ -127,4 +127,29 @@ footer {
     padding-left: 100px;
     color: white;
     text-decoration: none;
+    float:left;
+}
+
+#FooterSideLinks {
+    font-size: 40px;
+    float:right;
+    padding-top: 50px;
+    padding-right: 120px;
+    color: white;
+    text-decoration: none;
+}
+
+#ScratchTextInFooterDiv {
+    padding-bottom: 20px;
+}
+
+#ScratchTextInFooterAnchor {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#GitHubTextInFooterAnchor {
+    text-decoration: none;
+    color: white;
 }
