@@ -1,0 +1,246 @@
+body {
+    /* TODO: Change font */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    overflow: hidden;
+    background-color: rgb(14, 53, 68);
+    padding: 20px 10px;
+}
+
+.navbar-link {
+    float: left;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 15px;
+
+    /* buttons shape */
+    border-style: hidden;
+    border-width: 10px;
+    border-radius: 50% / 100%;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 7px;
+    text-decoration: none; /*to remove underline for link*/
+}
+
+.navbar-link:hover {
+    background-color: rgba(80, 155, 226, 0.363);
+}
+
+#blue-background {
+    background-color: rgb(34, 138, 241);
+    color: white;
+    box-shadow: 0px 0px 20px rgba(114, 114, 114, 0.678);
+}
+
+.nav-links {
+    float: right;
+}
+
+.header-left {
+    float: left;
+}
+
+.my_icon {
+    width: 60px;
+}
+
+.header_title {
+    font-weight: bold;
+    font-size: 25px;
+    float: right;
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+#intro {
+    margin-top: 100px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    padding: 55px;
+    width: 55%;
+    border-style: hidden;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: 'Segoe Print', Kalam, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #6598FF, #C70AFF);
+
+    animation-name: collapseIntro;
+    animation-duration: 3s;
+}
+
+@keyframes collapseIntro {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 10%;
+    }
+}
+
+#intro-back {
+    margin-top: 70px;
+    margin-left: 90px;
+    margin-bottom: 80px;
+    z-index: -1;
+    width: 55%;
+    height: 300px;
+    border-style: hidden;
+    position: fixed;
+    border-radius: 30px;
+    background: linear-gradient(to right, #adff29, #0a53ff);
+}
+
+#close_intro_button {
+    height: 25px;
+    width: 25px;
+    border-style: hidden;
+    border-radius: 50%;
+    background-color: white;
+    float: right !important;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Hi_text_in_intro {
+    font-size: 65px;
+}
+
+hr {
+    margin-right: 45px;
+    margin-left: 45px;
+}
+
+footer {
+    height: 200px;
+    background: linear-gradient(to right, #8E0CFF, #FF4600);
+}
+
+#BarelySmoothTextInFooter {
+    font-size: 55px;
+    padding-top: 70px;
+    padding-left: 100px;
+    color: white;
+    text-decoration: none;
+    float:left;
+}
+
+#FooterSideLinks {
+    font-size: 40px;
+    float:right;
+    padding-top: 50px;
+    padding-right: 120px;
+    color: white;
+    text-decoration: none;
+}
+
+#ScratchTextInFooterDiv {
+    padding-bottom: 20px;
+}
+
+#ScratchTextInFooterAnchor {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#GitHubTextInFooterAnchor {
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+#projectsGroup {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 05px;
+    list-style-type: none;
+}
+
+.project {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+#projectsGroup img {
+    border-radius: 17px;
+    width: 300px;
+}
+
+.projectLink {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4280D7;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+
+#alsoInterestedInContainer {
+    margin-left: 80px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-right: 100px;    
+}
+
+.alsoInterestedInItemContainer {
+    display: flex;
+    margin: 25px auto;
+}
+
+.alsoInterestedInImgDIV {
+    flex: 1;
+}
+
+.alsoInterestedInImg {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.alsoInterestedInText {
+    flex: 2;
+    margin-left: 30px;
+}
+
+.alsoInterestedInText h4 {
+    font-size: 30px;
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.alsoInterestedInText p {
+    font-size: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #388eff;
+}

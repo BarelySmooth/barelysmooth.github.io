@@ -1,54 +1,93 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <title>Not done yet..</title>
+    <title>BarelySmooth</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
-    <style>
-        .center-element{
-            display: flex;
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            width: 100%;
-        }
-
-        body {
-        overflow-y: hidden;
-        overflow-x: hidden;
-        }
-
-
-        h3{
-            font-family: 'Roboto', sans-serif;
-            font-size: 45px;
-            font-weight: 700;
-            color: rgb(53, 53, 53);
-            margin-top: 0px;
-            margin-bottom: 0px;
-            padding-bottom: 25px;
-            text-align: center;
-        }
-
-        h4{
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            font-size: 25px;
-            color: rgb(29, 27, 27);
-            margin-top: 0px;
-            margin-bottom: 0px;
-            text-align: center;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div class="center-element">
-<div><h3>Something Great is coming...</h3>
-<h4>July 10, 2021 (maybe)</h4>
-</div>
-</body>
+    <div class="header">
+        <div class="header-left">
+        <img class="my_icon" src="images/my-icon.svg">
+        <h2 class="header_title">BarelySmooth</h2>
+        </div>
 
+    <div class="nav-links">
+        <a href="#" id="blue-background" class="navbar-link">Home</a>
+        <a href="#" class="navbar-link">Scratch</a>
+        <a href="https://github.com/BarelySmooth" class="navbar-link">GitHub</a>
+    </div>
+    </div>
+</body>
+<!-- Temporarily commenting this out until I find a way to automatically hide it on scroll
+<div id="intro-back">&nbsp;</div> -->
+<div id="intro">
+<div id="close_intro_button" onclick="closeIntro()">x</div>
+
+<div class="Hi_text_in_intro">Hi!</div>
+
+<hr id="intro-hr">
+
+<p class="introText">I am BarelySmooth. This
+is a website I made! I don't know what to put here, but anyways...</p>
+
+<p class="introText">I know Python, JavaScript,
+C# and Scratch! Also
+include HTML and CSS
+if they count
+as Programming languages!
+</p>
+
+<p class="introText">Thanks</p>
+</div>
+<br>
+
+<h3>My Scratch Projects</h3>
+<hr style="margin-top: -20px; margin-left: 52px; margin-right: 100px;">
+    <ul id="projectsGroup">
+        <li class="project">
+            <a href="https://scratch.mit.edu/projects/513681853/"> <img src="https://uploads.scratch.mit.edu/projects/thumbnails/513681853.png"></a><br>
+            <a href="https://scratch.mit.edu/projects/513681853/" class="projectLink">Colorful Platformer</a>
+        </li>
+        <li class="project">
+            <a href="https://scratch.mit.edu/projects/504928648/"><img src="https://uploads.scratch.mit.edu/projects/thumbnails/504928648.png"></a><br>
+            <a href="https://scratch.mit.edu/projects/504928648/" class="projectLink">Surprisingly Scratch</a>
+        </li>
+        <li class="project">
+            <a href="https://scratch.mit.edu/projects/477454677/"><img src="https://uploads.scratch.mit.edu/projects/thumbnails/477454677.png"></a><br>
+            <a href="https://scratch.mit.edu/projects/477454677/" class="projectLink">Ping OS 2.0</a>
+        </li>
+    </ul>
+
+<h3>You might also be interested in:</h3>
+<hr style="margin-top: -20px; margin-left: 52px; margin-right: 100px;">
+<div id="alsoInterestedInContainer">
+<div class="alsoInterestedInItemContainer">
+    <div class="alsoInterestedInImgDIV"><img src="images/source_code_thumbnail.png" class="alsoInterestedInImg"></div>
+    <div class="alsoInterestedInText">
+        <h4>The source code of this website!</h4>
+        <p>This website is open-source. Check out its source code <a href="https://github.com/BarelySmooth/barelysmooth.github.io">here!</a></p>
+    </div>
+</div>
+
+<div class="alsoInterestedInItemContainer">
+    <div class="alsoInterestedInImgDIV"><img src="images/404representation.png" class="alsoInterestedInImg"></div>
+    <div class="alsoInterestedInText">
+        <h4>The website's 404 page</h4>
+        <p>You have to see it. Its so cool! <a href="404.html">Here is the link</a> to the 404 page I made.</p>
+    </div>
+</div>
+</div>
+
+<footer>
+    <div id="BarelySmoothTextInFooter">BarelySmooth</div>
+    <div id="FooterSideLinks">
+        <div id="ScratchTextInFooterDiv"><a href="#" id="ScratchTextInFooterAnchor">Scratch</a></div>
+        <div id="GitHubTextInFooterDiv"><a href="https://github.com/BarelySmooth" id="GitHubTextInFooterAnchor">GitHub</a></div>
+    </div>
+</footer>
+<script src="script.js"></script>
 </html>
