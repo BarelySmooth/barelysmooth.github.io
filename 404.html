@@ -25,6 +25,7 @@
         padding-left: 150px;
         color: white;
         font-weight: 500;
+        margin-bottom: 40px;
     }
 
     h4 {
@@ -33,7 +34,38 @@
         color: white;
         font-size: 30px;
         padding-left: 150px;
-        padding-right: 30px;
+        padding-right: 80px;
+    }
+
+    #infoContainer {
+        overflow: hidden;
+        display: flex;
+        margin-left: 150px;
+    }
+
+    .qr-code {
+        /* filter:  invert(100%) sepia(40%) invert(100%) saturate(7000%) hue-rotate(675deg) brightness(100%) contrast(100%); */
+        width: 150px;
+    }
+
+    #infoText {
+        margin-left: 40px;
+        font-family: 'Segoe UI Variable', 'Segoe UI', 'Open Sans', sans-serif;
+        color: white;
+        margin-top: 0px;
+    }
+
+    #infoText a {
+        color: white;
+    }
+
+    #infoTextBIG {
+        font-size: 20px;
+    }
+
+    #infoTextSMALL {
+        font-size: 14px;
+        bottom: 0;
     }
     </style>
 </head>
@@ -44,6 +76,15 @@
 <h4>This page ran into an error and needs to be refreshed. This is probably a problem with the requested URL not existing on the server.
     Also look, I am in your cursor now!
 </h4>
+
+<div id="infoContainer">
+    <img src="images/website_qrcode.png" class="qr-code">
+    <div id="infoText">
+        <p id="infoTextBIG">In the meantime, you can visit the <a href="..">homepage!</a><br><br></p>
+        <p id="infoTextSMALL">If you'd like to know more, you can search online for this error:<br>Error code: 404. PAGE NOT FOUND</p>
+    </div>
+</div>
+
 </div>
 </body>
 
