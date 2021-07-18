@@ -89,6 +89,36 @@ h3 {
     width: 300px;
 }
 
+
+#projectsGroup img:hover{ 
+    animation: blurOut 1s forwards;;
+}
+
+#projectsGroup img:not(:hover){ 
+    animation: blurIn 1s forwards;;
+}
+
+@keyframes blurOut {
+    from {
+        filter: blur(0px);
+    }
+
+    to {
+        filter: blur(7px);
+    }
+}
+
+
+@keyframes blurIn {
+    from {
+        filter: blur(7px);
+    }
+
+    to {
+        filter: blur(0px);
+    }
+}
+
 .projectLink {
     display: block;
     font-weight: bold;
