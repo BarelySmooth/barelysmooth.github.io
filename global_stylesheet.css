@@ -1,0 +1,124 @@
+body {
+    /* TODO: Change font */
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    overflow: hidden;
+    background-color: rgb(14, 53, 68);
+    padding: 20px 10px;
+}
+
+.navbar-link {
+    float: left;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 15px;
+
+    /* buttons shape */
+    border-style: hidden;
+    border-width: 10px;
+    border-radius: 50% / 100%;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 7px;
+    text-decoration: none; /*to remove underline for link*/
+}
+
+.navbar-link:hover {
+    background-color: rgba(80, 155, 226, 0.363);
+}
+
+#blue-background {
+    background-color: rgb(34, 138, 241);
+    color: white;
+    box-shadow: 0px 0px 20px rgba(114, 114, 114, 0.678);
+}
+
+.nav-links {
+    float: right;
+}
+
+.header-left {
+    float: left;
+}
+
+.my_icon {
+    width: 60px;
+}
+
+.header_title {
+    font-weight: bold;
+    font-size: 25px;
+    float: right;
+    margin-top: 17px;
+    margin-left: 10px;
+    margin-left: 20px;
+    color: white;
+}
+
+footer {
+    height: 200px;
+    background: linear-gradient(to right, #8E0CFF, #FF4600);
+}
+
+#BarelySmoothTextInFooter {
+    font-size: 55px;
+    padding-top: 70px;
+    padding-left: 100px;
+    color: white;
+    text-decoration: none;
+    float:left;
+}
+
+#FooterSideLinks {
+    font-size: 40px;
+    float:right;
+    padding-top: 50px;
+    padding-right: 120px;
+    color: white;
+    text-decoration: none;
+}
+
+#ScratchTextInFooterDiv {
+    padding-bottom: 20px;
+}
+
+#ScratchTextInFooterAnchor {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#GitHubTextInFooterAnchor {
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #388eff;
+}
+
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ececec;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #b8b8b8;
+    padding-left: 2px;
+}
