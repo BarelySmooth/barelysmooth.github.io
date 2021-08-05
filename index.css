@@ -60,29 +60,6 @@
     font-size: 65px;
 }
 
-@media (max-width: 600px) {
-    #intro {
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
-        animation: floatUp 0.75s 0.5s;
-        animation-fill-mode: forwards;
-        /* box-shadow: 0px 0px  60px #220affc0; */
-    }
-
-    @keyframes floatUp {
-        from {
-            box-shadow: 0px 0px  0px #9d0aff9a;
-            margin-top: 100px;
-        }
-
-        to {
-            box-shadow: 0px 0px  60px #220affc0;
-            margin-top: 80px;
-        }
-    }
-}
-
 hr {
     margin-right: 45px;
     margin-left: 45px;
@@ -189,4 +166,97 @@ h3 {
 .alsoInterestedInText p {
     font-size: 20px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+    #intro {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 25px;
+        animation: floatUp 0.75s 0.5s;
+        animation-fill-mode: forwards;
+        /* box-shadow: 0px 0px  60px #220affc0; */
+    }
+
+    #intro-hr {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+ 
+    @keyframes floatUp {
+        from {
+            box-shadow: 0px 0px  0px #9d0aff9a;
+            margin-top: 100px;
+        }
+
+        to {
+            box-shadow: 0px 0px  60px #220affc0;
+            margin-top: 80px;
+        }
+    }
+
+    h3 {
+        margin-left: 20px !important;
+    }
+
+    .hr-under-h3 {
+        margin-left: 20px !important;
+        width: 90%;
+        margin-right: 70px;
+    }
+
+    #projectsGroup {
+        margin-top: 10px;
+        margin-bottom: 80px;
+        margin-left: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        list-style-type: none;
+    }
+
+    .project {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .project img {
+        width: 100% !important;
+    }
+
+    .projectLink {
+        display: block;
+        font-weight: bold;
+        text-decoration: none;
+        color: #4280D7;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 25px;
+    }
+
+    .alsoInterestedInItemContainer {
+        display: inline;
+        width: 100%;
+    }
+
+    #alsoInterestedInContainer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .alsoInterestedInImg {
+        width: 100%;
+    }
+
+    .alsoInterestedInImgDIV {
+        width: 100%;
+    }
+
+    .alsoInterestedInText {
+        margin-left: 0px;
+    }
 }
