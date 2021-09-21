@@ -115,7 +115,7 @@ a {
     #BarelySmoothTextInFooter {
         font-size: 25px;
         padding-top: 40px;
-        padding-left: 20px;
+        padding-left: 20px !important;
         color: white;
         text-decoration: none;
     }
@@ -130,6 +130,16 @@ a {
 
     #ScratchTextInFooterDiv {
         padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #FooterSideLinks {
+        padding-right: 50px;
+    }
+
+    #BarelySmoothTextInFooter {
+        padding-left: 40px;
     }
 }
 

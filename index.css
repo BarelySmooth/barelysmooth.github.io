@@ -325,3 +325,13 @@ h3 {
         margin-left: 0px;
     }
 }
+
+@media (max-width: 638px) {
+    .alsoInterestedInImg {
+        width: 300px;
+    }
+
+    .alsoInterestedInImgDIV {
+        width: 100%;
+    }
+}
