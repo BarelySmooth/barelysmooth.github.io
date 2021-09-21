@@ -7,7 +7,7 @@ body {
 
 .header {
     overflow: hidden;
-    background-color: rgb(14, 53, 68);
+    background-color: rgb(16, 52, 66);
     padding: 20px 10px;
 }
 
@@ -157,4 +157,16 @@ a {
     border-radius: 10px;
     background-color: #b8b8b8;
     padding-left: 2px;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #3a3a3a;
+        color: #ffffff;
+    }
+
+    img {
+        filter: brightness(0.8) contrast(1.2);
+    }
 }
