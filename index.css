@@ -244,6 +244,10 @@ h3 {
         margin-right: 5px;
         margin-left: 5px;
     }
+
+    #intro-back-container {
+        display: none !important;
+    }
  
     @keyframes floatUp {
         from {
