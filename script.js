@@ -14,7 +14,7 @@ function closeIntro() {
     introBackContainer.style["display"] = "none";
 }
 
-document.addEventListener('scroll', function() {
+function modifyIntroOnScroll() {
     lastKnownScrollPosition = window.scrollY;
   
     if (window.scrollY < document.getElementById("intro").offsetHeight - 200){
@@ -33,4 +33,7 @@ document.addEventListener('scroll', function() {
         document.getElementById("intro-back-container").classList.remove("intro-back-container-normal");
     }
 
-  });
+}
+
+document.addEventListener('scroll', modifyIntroOnScroll);
+
