@@ -3,11 +3,15 @@ function closeIntro() {
     const introElementText = document.getElementsByClassName("introText");
     const introElementHR = document.getElementById("intro-hr");
     const introCloseButton = document.getElementById("close_intro_button");
+    const introBack = document.getElementById("intro-back");
+    const introBackContainer = document.getElementById("intro-back-container");
     introElementText[0].style["display"] = "none";
     introElementText[1].style["display"] = "none";
     introElementText[2].style["display"] = "none";
     introElementHR.style["display"] = "none";
     introCloseButton.style["display"] = "none";
+    introBack.style["display"] = "none";
+    introBackContainer.style["display"] = "none";
 }
 
 document.addEventListener('scroll', function() {
