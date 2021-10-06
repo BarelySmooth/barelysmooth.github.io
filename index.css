@@ -150,6 +150,10 @@ h3 {
     width: 300px;
 }
 
+.projectImageContainer {
+    overflow: hidden;
+    border-radius: 20px;
+}
 
 #projectsGroup img:hover{ 
     animation: blurOut 1s forwards;;
