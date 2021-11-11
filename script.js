@@ -17,7 +17,7 @@ function closeIntro() {
 function modifyIntroOnScroll() {
     lastKnownScrollPosition = window.scrollY;
   
-    if (window.scrollY < document.getElementById("intro").offsetHeight - 200){
+    if (window.scrollY < document.getElementById("intro").offsetHeight - 300){
         document.getElementById("intro-back").classList.add("intro-back-normal");
         document.getElementById("intro-back").classList.remove("intro-back-line");
         
