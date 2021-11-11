@@ -151,36 +151,44 @@ h3 {
 }
 
 .projectImageContainer {
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 20px;
 }
 
 #projectsGroup img:hover{ 
-    animation: blurOut 1s forwards;;
+    animation: hoverUp 1s forwards;;
 }
 
 #projectsGroup img:not(:hover){ 
-    animation: blurIn 1s forwards;;
+    animation: hoverDown 1s forwards;;
 }
 
-@keyframes blurOut {
+@keyframes hoverUp {
     from {
-        filter: blur(0px);
+        /* filter: blur(0px); */
+        box-shadow: 0px 0px 0px 0px #f3f3f3;
+        width: 300px;
     }
 
     to {
-        filter: blur(7px);
+        /* filter: blur(7px); */
+        box-shadow: 0px 25px 50px 0px #bbbbbb;
+        width: 310px;
     }
 }
 
 
-@keyframes blurIn {
+@keyframes hoverDown {
     from {
-        filter: blur(7px);
+        /* filter: blur(7px); */
+        box-shadow: 0px 25px 50px 0px #bbbbbb;
+        width: 310px;
     }
 
     to {
-        filter: blur(0px);
+        /* filter: blur(0px); */
+        box-shadow: 0px 0px 0px 0px #f3f3f3;
+        width: 300px;
     }
 }
 
