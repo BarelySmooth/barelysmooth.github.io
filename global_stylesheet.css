@@ -49,6 +49,7 @@ body {
 
 .my_icon {
     width: 60px;
+    /* background-color: white; */
 }
 
 .header_title {
@@ -143,6 +144,8 @@ a {
     }
 }
 
+
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -168,5 +171,9 @@ a {
 
     img {
         filter: brightness(0.85);
+    }
+
+    .header {
+        background-color: rgb(44, 79, 173);
     }
 }

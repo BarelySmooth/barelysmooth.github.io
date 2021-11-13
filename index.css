@@ -377,6 +377,10 @@ h3 {
         }
     }
 
+    #intro {
+        background: linear-gradient(to bottom right, #245ed1, #6e1788);
+    }
+
     #projectsGroup img:hover{ 
         animation: hoverUpDARK 1s forwards;;
     }
