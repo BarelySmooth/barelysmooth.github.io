@@ -442,3 +442,99 @@ h3 {
         border-width: 1px;
     }
 }
+
+/* For IE only */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #intro {
+        margin-top: 180px;
+        border-radius: 15px 15px 0px 0px;
+        border-style: solid;
+        border-color: #023864;
+        border-width: 1px;
+        font-family: sans-serif;
+        font-size: 20px;
+        width: 400px;
+        background: linear-gradient(to bottom right, #bfd4fd, #edb3ff);
+        color: #000000;
+    }
+
+    .alsoInterestedInItemContainer {
+        display: flexbox;
+        flex: 0 1 auto;
+        margin: 25px auto;
+    }
+
+    .projectLink {
+        font-family: monospace;
+        color: rgb(218, 238, 255);
+    }
+
+    #projectsGroup img:hover{ 
+        animation: hoverUpIE 2s forwards;;
+    }
+    
+    #projectsGroup img:not(:hover){ 
+        animation: hoverDownIE 2s forwards;;
+    }
+
+    .alsoInterestedInItemContainer {
+        color: white;
+    }
+
+    .projectImageContainer img {
+        border: 5px solid #000000;
+    }
+
+    .alsoInterestedInImgDIV img{
+        border-style: solid;
+        border-color: #a5b7f1;
+        border-width: 5px;
+    }
+
+}
+
+
+@keyframes hoverUpIE {
+    from {
+        /* filter: blur(0px); */
+        border-style: solid;
+        border-color: #a5b7f1;
+        border-width: 5px;
+
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    to {
+        /* filter: blur(7px); */
+        border-style: solid;
+        border-color: #a5b7f1;
+        border-width: 10px;
+
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+
+@keyframes hoverDownIE {
+    from {
+        /* filter: blur(7px); */
+        border-style: solid;
+        border-color: #a5b7f1;
+        border-width: 10px;
+
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    to {
+        /* filter: blur(0px); */
+        border-style: solid;
+        border-color: #a5b7f1;
+        border-width: 5px;
+
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
