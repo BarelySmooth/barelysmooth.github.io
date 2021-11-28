@@ -18,6 +18,8 @@ body {
     left: 10px;
     right: 10px;
     backdrop-filter: blur(25px);
+
+    z-index: 1;
 }
 
 .navbar-link {
