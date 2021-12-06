@@ -16,6 +16,11 @@
     animation-duration: 3s;
 }
 
+body {
+    /* this fixes a particular problem where thie intro-back-element behaved weird */
+    overflow-anchor: none;
+  }
+
 @keyframes collapseIntro {
     from {
         height: 100%;
@@ -32,6 +37,8 @@
     margin-left: 45px;
     padding: 0px 55px;
     width: 55%;
+
+    margin-top: 125px;
 }
 
 #intro-back-container.intro-back-container-normal {
