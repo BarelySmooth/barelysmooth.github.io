@@ -35,5 +35,5 @@ function modifyIntroOnScroll() {
 
 }
 
-document.addEventListener('scroll', modifyIntroOnScroll);
+// document.addEventListener('scroll', modifyIntroOnScroll);
 
