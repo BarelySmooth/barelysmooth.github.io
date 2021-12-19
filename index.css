@@ -163,11 +163,11 @@ h3 {
 }
 
 #projectsGroup img:hover{ 
-    animation: hoverUp 1s forwards;;
+    animation: hoverUp 1s forwards;
 }
 
 #projectsGroup img:not(:hover){ 
-    animation: hoverDown 1s forwards;;
+    animation: hoverDown 1s forwards;
 }
 
 @keyframes hoverUp {
@@ -265,6 +265,7 @@ h3 {
         animation: floatUp 0.75s 0.25s;
         animation-fill-mode: forwards;
         /* box-shadow: 0px 0px  60px #220affc0; */
+        margin-top: 250px;
     }
 
     #intro-hr {
@@ -313,6 +314,14 @@ h3 {
         margin-right: auto;
         margin-top: 25px;
         width: 100%;
+    }
+
+    #projectsGroup img:hover{ 
+        animation: none;
+    }
+    
+    #projectsGroup img:not(:hover){ 
+        animation: none;
     }
 
     .project img {
@@ -373,27 +382,35 @@ h3 {
 
         @keyframes floatUpDARK {
             from {
-                box-shadow: 0px 0px  0px #4b007c9a;
+                box-shadow: 0px 0px  0px #8244ac9a;
                 margin-top: 100px;
             }
     
             to {
-                box-shadow: 0px 0px 60px #7a8dce;
+                box-shadow: 0px 0px 60px #3d4a75;
                 margin-top: 80px;
             }
+        }
+
+        #projectsGroup img:hover{ 
+            animation: none !important;
+        }
+        
+        #projectsGroup img:not(:hover){ 
+            animation: none !important;
         }
     }
 
     #intro {
-        background: linear-gradient(to bottom right, #245ed1, #6e1788);
+        background: linear-gradient(to bottom right, #547bc9, #9140aa);
     }
 
     #projectsGroup img:hover{ 
-        animation: hoverUpDARK 1s forwards;;
+        animation: hoverUpDARK 1s forwards;
     }
     
     #projectsGroup img:not(:hover){ 
-        animation: hoverDownDARK 1s forwards;;
+        animation: hoverDownDARK 1s forwards;
     }
 }
 
