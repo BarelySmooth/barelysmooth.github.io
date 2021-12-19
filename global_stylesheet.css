@@ -3,6 +3,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
+
+    background: linear-gradient(to bottom, #e8f5ff, #dce5ff);
 }
 
 .header {
@@ -189,7 +191,7 @@ a {
 /* Dark Theme */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #3a3a3a;
+        background: linear-gradient(to bottom, #3a3a3a, #2b2b2b);
         color: #ffffff;
     }
 
