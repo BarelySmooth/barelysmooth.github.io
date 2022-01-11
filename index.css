@@ -41,10 +41,17 @@ body {
     color: white;
     font-size: 35px;
     font-family: 'Kalam', Verdana, sans-serif;
-    background: linear-gradient(to bottom right, #6598FF, #C70AFF);
-
+    background: linear-gradient(to left, #bc810b, #995ab0);
+    background-size: 500%;
     animation-name: collapseIntro;
     animation-duration: 3s;
+
+    animation: introGradient 10s infinite alternate;
+}
+
+@keyframes introGradient {
+    from {background-position: right;}
+    to {background-position: left;}
 }
 
 body {
@@ -167,9 +174,15 @@ hr {
 h3 {
     margin-left: 50px;
     font-size: 30px;
+    color: #d0dfff;
 }
 
 #projectsGroup {
+    max-width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
     margin-top: 30px;
     margin-bottom: 80px;
     margin-left: 05px;
@@ -177,7 +190,7 @@ h3 {
 }
 
 .project {
-    display: inline-block;
+    /* display: inline-block; */
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 10px;
@@ -195,19 +208,19 @@ h3 {
 }
 
 #projectsGroup img:hover{ 
-    animation: hoverUp 1s forwards;
+    /* animation: hoverUp 1s forwards; */
     transform: scale(1.05);
 }
 
 #projectsGroup img:not(:hover){ 
-    animation: hoverDown 1s backwards .3s;
+    /* animation: hoverDown 1s backwards .3s; */
     transform: scale(1);
 }
 
 @keyframes hoverUp {
     from {
         /* filter: blur(0px); */
-        box-shadow: 0px 0px 0px 0px #f3f3f3;
+        box-shadow: 0px 0px 0px 0px #1c1c1c;
         /* width: 300px; */
         /* margin-left: 0px; */
         /* margin-right: 0px; */
@@ -215,7 +228,7 @@ h3 {
 
     to {
         /* filter: blur(7px); */
-        box-shadow: 0px 25px 50px 0px #bbbbbb;
+        box-shadow: 0px 25px 50px 0px #1c1c1c;
         /* width: 310px; */
         /* margin-left: -5px; */
         /* margin-right: -5px; */
@@ -226,7 +239,7 @@ h3 {
 @keyframes hoverDown {
     from {
         /* filter: blur(7px); */
-        box-shadow: 0px 25px 50px 0px #bbbbbb;
+        box-shadow: 0px 25px 50px 0px #1c1c1c;
         /* width: 310px; */
         /* margin-left: -5px; */
         /* margin-right: -5px; */
@@ -234,7 +247,7 @@ h3 {
 
     to {
         /* filter: blur(0px); */
-        box-shadow: 0px 0px 0px 0px #f3f3f3;
+        box-shadow: 0px 0px 0px 0px #1c1c1c;
         /* width: 300px; */
         /* margin-left: 0px; */
         /* margin-right: 0px; */
