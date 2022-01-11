@@ -155,6 +155,7 @@ h3 {
 #projectsGroup img {
     border-radius: 17px;
     width: 300px;
+    transition: .5s;
 }
 
 .projectImageContainer {
@@ -164,27 +165,29 @@ h3 {
 
 #projectsGroup img:hover{ 
     animation: hoverUp 1s forwards;
+    transform: scale(1.05);
 }
 
 #projectsGroup img:not(:hover){ 
-    animation: hoverDown 1s forwards;
+    animation: hoverDown 1s backwards .3s;
+    transform: scale(1);
 }
 
 @keyframes hoverUp {
     from {
         /* filter: blur(0px); */
         box-shadow: 0px 0px 0px 0px #f3f3f3;
-        width: 300px;
-        margin-left: 0px;
-        margin-right: 0px;
+        /* width: 300px; */
+        /* margin-left: 0px; */
+        /* margin-right: 0px; */
     }
 
     to {
         /* filter: blur(7px); */
         box-shadow: 0px 25px 50px 0px #bbbbbb;
-        width: 310px;
-        margin-left: -5px;
-        margin-right: -5px;
+        /* width: 310px; */
+        /* margin-left: -5px; */
+        /* margin-right: -5px; */
     }
 }
 
@@ -193,17 +196,17 @@ h3 {
     from {
         /* filter: blur(7px); */
         box-shadow: 0px 25px 50px 0px #bbbbbb;
-        width: 310px;
-        margin-left: -5px;
-        margin-right: -5px;
+        /* width: 310px; */
+        /* margin-left: -5px; */
+        /* margin-right: -5px; */
     }
 
     to {
         /* filter: blur(0px); */
         box-shadow: 0px 0px 0px 0px #f3f3f3;
-        width: 300px;
-        margin-left: 0px;
-        margin-right: 0px;
+        /* width: 300px; */
+        /* margin-left: 0px; */
+        /* margin-right: 0px; */
     }
 }
 
