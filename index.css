@@ -1,6 +1,37 @@
+body {
+    background: #5b5b5b;
+    font-family: sans-serif, Arial, sans-serif;
+}
+
+.viewport-height {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #222222;
+    height: 110vh;
+}
+
+#main-text {
+    color: #fff;
+    font-size: 5.5em;
+    font-weight: 500;
+    /* text-align: center; */
+    /* margin-top: 40vh; */
+}
+
+.rest-of-page {
+    padding-top: 100px;
+    border-radius: 30px;
+    margin-top: -10vh;
+    background-color: #303030;
+}
+
 #intro {
-    margin-top: 100px;
-    margin-left: 45px;
+    margin: 0 auto;
+    max-width: 700px;
+    /* margin-top: 100px !important; */
+    align-items: center;
     margin-bottom: 20px;
     padding: 55px;
     width: 55%;
@@ -38,7 +69,7 @@ body {
     padding: 0px 55px;
     width: 55%;
 
-    margin-top: 125px;
+    /* margin-top: 125px; */
 }
 
 #intro-back-container.intro-back-container-normal {
