@@ -50,14 +50,19 @@ body {
 }
 
 @keyframes introGradient {
-    from {background-position: right;}
-    to {background-position: left;}
+    from {
+        background-position: right;
+    }
+
+    to {
+        background-position: left;
+    }
 }
 
 body {
     /* this fixes a particular problem where thie intro-back-element behaved weird */
     overflow-anchor: none;
-  }
+}
 
 @keyframes collapseIntro {
     from {
@@ -99,7 +104,7 @@ body {
     border-style: hidden;
     position: fixed;
     border-radius: 20px;
-    
+
     /* background: linear-gradient(to right, #c0e487, #b1bdda); */
     /* animation: un-transform-to-line 0.5s forwards; */
 }
@@ -138,7 +143,7 @@ body {
         margin-left: 10px;
         width: 1%;
     }
-    
+
     to {
         /* margin-left: 45px; */
         width: 45%;
@@ -182,7 +187,7 @@ h3 {
     max-width: fit-content;
     display: flex;
     flex-wrap: wrap;
-    
+
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 80px;
@@ -208,12 +213,16 @@ h3 {
     border-radius: 20px;
 }
 
-#projectsGroup img:hover{ 
+#projectsGroup img:hover {
     /* animation: hoverUp 1s forwards; */
     transform: scale(1.05);
 }
 
-#projectsGroup img:not(:hover){ 
+#projectsGroup img:hover:active {
+    transform: scale(0.95);
+}
+
+#projectsGroup img:not(:hover) {
     /* animation: hoverDown 1s backwards .3s; */
     transform: scale(1);
 }
@@ -325,15 +334,15 @@ h3 {
     #intro-back-container {
         display: none !important;
     }
- 
+
     @keyframes floatUp {
         from {
-            box-shadow: 0px 0px  0px #9d0aff9a;
+            box-shadow: 0px 0px 0px #9d0aff9a;
             margin-top: 100px;
         }
 
         to {
-            box-shadow: 0px 0px  60px #220affc0;
+            box-shadow: 0px 0px 60px #220affc0;
             margin-top: 80px;
         }
     }
@@ -365,11 +374,11 @@ h3 {
         width: 100%;
     }
 
-    #projectsGroup img:hover{ 
+    #projectsGroup img:hover {
         animation: none;
     }
-    
-    #projectsGroup img:not(:hover){ 
+
+    #projectsGroup img:not(:hover) {
         animation: none;
     }
 
@@ -431,21 +440,21 @@ h3 {
 
         @keyframes floatUpDARK {
             from {
-                box-shadow: 0px 0px  0px #8244ac9a;
+                box-shadow: 0px 0px 0px #8244ac9a;
                 margin-top: 100px;
             }
-    
+
             to {
                 box-shadow: 0px 0px 60px #3d4a75;
                 margin-top: 80px;
             }
         }
 
-        #projectsGroup img:hover{ 
+        #projectsGroup img:hover {
             animation: none !important;
         }
-        
-        #projectsGroup img:not(:hover){ 
+
+        #projectsGroup img:not(:hover) {
             animation: none !important;
         }
     }
@@ -509,7 +518,8 @@ h3 {
 }
 
 /* For IE only */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
     #intro {
         margin-top: 180px;
         border-radius: 15px 15px 0px 0px;
@@ -534,12 +544,14 @@ h3 {
         color: rgb(218, 238, 255);
     }
 
-    #projectsGroup img:hover{ 
-        animation: hoverUpIE 2s forwards;;
+    #projectsGroup img:hover {
+        animation: hoverUpIE 2s forwards;
+        ;
     }
-    
-    #projectsGroup img:not(:hover){ 
-        animation: hoverDownIE 2s forwards;;
+
+    #projectsGroup img:not(:hover) {
+        animation: hoverDownIE 2s forwards;
+        ;
     }
 
     .alsoInterestedInItemContainer {
@@ -550,7 +562,7 @@ h3 {
         border: 5px solid #000000;
     }
 
-    .alsoInterestedInImgDIV img{
+    .alsoInterestedInImgDIV img {
         border-style: solid;
         border-color: #a5b7f1;
         border-width: 5px;
