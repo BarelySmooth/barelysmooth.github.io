@@ -1,3 +1,10 @@
+
+// I dont want visitors from scratch to see this
+// Note: This doesn't work when testing on localhost.
+if (document.referrer === 'https://scratch.mit.edu') {
+    document.getElementsByClassName('rebot')[0].style.display = 'none'
+}
+
 function closeIntro() {
     const introElement = document.getElementById("intro");
     const introElementText = document.getElementsByClassName("introText");
