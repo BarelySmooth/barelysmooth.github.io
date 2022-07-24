@@ -179,7 +179,6 @@ h3 {
     max-width: fit-content;
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 80px;
@@ -357,7 +356,12 @@ h3 {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+/* For small screens */
 @media (max-width: 600px) {
+    .viewport-height {
+        height: 100vh;
+    }
+    
     #intro {
         width: auto;
         margin-left: 10px;
@@ -369,23 +373,34 @@ h3 {
         margin-top: 250px;
     }
 
-    #intro-hr {
-        margin-right: 5px;
-        margin-left: 5px;
+    #main-text {
+        font-size: 50px;
     }
 
-    #intro-back-container {
-        display: none !important;
+    .rest-of-page {
+        border-radius: 30px;
+        padding-top: 30px;
+    }
+
+    /* intro stuff */
+    #intro {
+        padding: 40px 20px;
+        border-radius: 20px;
+        margin-top: 0px;
+    }
+
+    .Hi_text_in_intro {
+        font-size: 30px;
     }
 
     @keyframes floatUp {
         from {
-            box-shadow: 0px 0px 0px #9d0aff9a;
+            box-shadow: 0px 0px 0px #9d0aff76;
             margin-top: 100px;
         }
 
         to {
-            box-shadow: 0px 0px 60px #220affc0;
+            box-shadow: 0px 0px 60px #2e2953;
             margin-top: 80px;
         }
     }
@@ -400,21 +415,20 @@ h3 {
         margin-right: 70px;
     }
 
+    #projectsIveWorkedOnContainer {
+        flex-direction: column;
+        margin: 0px;
+        gap: 0px;
+        align-items: center;
+    }
+
     #projectsGroup {
-        margin-top: 10px;
-        margin-bottom: 80px;
-        margin-left: 0px;
+        gap: 15px;
         padding-left: 0px;
-        padding-right: 20px;
-        list-style-type: none;
     }
 
     .project {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 25px;
-        width: 100%;
+        line-height: 15px;
     }
 
     #projectsGroup img:hover {
@@ -427,17 +441,16 @@ h3 {
 
     .project img {
         width: 75% !important;
+        border-radius: 15px !important;
     }
 
     .projectLink {
         display: block;
-        font-weight: bold;
-        text-decoration: none;
+        font-weight: 400;
         color: #4280D7;
         text-align: left;
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
+        font-size: 20px;
+        padding-top: 0px;
     }
 
     .alsoInterestedInItemContainer {
