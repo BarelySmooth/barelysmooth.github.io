@@ -331,6 +331,11 @@ h3 {
   background-color: rgba(101, 191, 136, 0.5);
 }
 
+.projectsIveWorkedOnLabel.warning {
+  border: 2px solid rgb(205, 164, 84);
+  background-color: rgba(205, 164, 84, 0.5);
+}
+
 .projectsIveWorkedOnText h4 {
   font-size: 30px;
   margin: 10px 0px;
