@@ -10,7 +10,7 @@ body {
   align-items: center;
 
   background-color: #222222;
-  height: 90vh;
+  height: 93vh;
 }
 
 #main-text {
@@ -21,8 +21,9 @@ body {
 
 #sub-text {
   color: #989898;
-  font-size: larger;
+  font-size: 25px;
   font-style: italic;
+  padding-top: 10px;
 }
 
 .rest-of-page {
