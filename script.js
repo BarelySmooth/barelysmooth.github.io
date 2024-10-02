@@ -1,57 +1,82 @@
-// I dont want visitors from scratch to see this
-// Note: This doesn't work when testing on localhost.
-if (document.referrer === "https://scratch.mit.edu") {
-  document.getElementsByClassName("rebot")[0].style.display = "none";
+// Dynamically add coding projects
+const LIST_OF_CODING_PROJECTS = [
+  {
+    name: "Todo",
+    description: "A simple todo list app built with React.js",
+    imageURL: "./images/todoapp-project-img.png",
+    links: {
+      github: "https://github.com/BarelySmooth/react-todo",
+      website: "https://barelysmooth.dev/react-todo",
+    },
+    languages: ["React.js", "HTML", "CSS"],
+    development_status: "In Development",
+  },
+  {
+    name: "barelysmooth.dev",
+    description: "My personal portfolio website",
+    imageURL: "./images/source_code_thumbnail.png",
+    links: {
+      github: "https://github.com/BarelySmooth/barelysmooth.github.io",
+      website: "https://barelysmooth.dev/",
+    },
+    languages: ["HTML", "CSS", "JS"],
+    development_status: "Actively Maintained",
+  },
+  {
+    name: "Rebot",
+    description: "A discord bot to manage message reports in a server",
+    imageURL: "./images/rebot-project-img.png",
+    links: {
+      github: "https://github.com/BarelySmooth/rebot",
+      website: null,
+    },
+    languages: ["Discord.js", "JS"],
+    development_status: "Unmaintained",
+  },
+];
+
+const codingprojects_container_div = document.querySelector(
+  "#coding-projects-container"
+);
+const coding_projects_list = document.createElement("ul");
+coding_projects_list.id = "coding_projects_list";
+codingprojects_container_div.appendChild(coding_projects_list);
+
+// PS: the below regex is to remove whitespace
+for (project of LIST_OF_CODING_PROJECTS) {
+  const projectElement = document.createElement("li");
+  projectElement.classList.add("coding_project");
+  projectElement.innerHTML = `
+  <img src="${project.imageURL}" alt="Representative image of project: ${
+    project.name
+  }" class="project-image">
+  <div class="coding-project-details">
+      <div class="title-and-status-container">
+        <h3>${project.name}</h3>
+        <p class="development-status pill ${project.development_status
+          .toLowerCase()
+          .replace(/\s+/g, "-")}-pill">${project.development_status}</p>
+      </div>
+      <p>${project.description}</p>
+  </div>
+  <div class="project-links">
+      <a href="${project.links.github}" class="project-link">
+        <img src="./images/githubicon.svg" alt="github repository" />
+      </a>
+      ${
+        project.links.website
+          ? `<a href="${project.links.website}" class="project-link">
+                <img src="./images/linkicon.svg" alt="github repository" />
+            </a>`
+          : ""
+      }
+  </div>
+  `;
+  document.getElementById("coding_projects_list").appendChild(projectElement);
 }
 
-// TODO: remove this
-function closeIntro() {
-  const introElement = document.getElementById("intro");
-  const introElementText = document.getElementsByClassName("introText");
-  const introElementHR = document.getElementById("intro-hr");
-  const introCloseButton = document.getElementById("close_intro_button");
-  const introBack = document.getElementById("intro-back");
-  const introBackContainer = document.getElementById("intro-back-container");
-  introElementText[0].style["display"] = "none";
-  introElementText[1].style["display"] = "none";
-  introElementText[2].style["display"] = "none";
-  introElementHR.style["display"] = "none";
-  introCloseButton.style["display"] = "none";
-  introBack.style["display"] = "none";
-  introBackContainer.style["display"] = "none";
-}
-
-// TODO: remove this
-function modifyIntroOnScroll() {
-  lastKnownScrollPosition = window.scrollY;
-
-  if (window.scrollY < document.getElementById("intro").offsetHeight - 350) {
-    document.getElementById("intro-back").classList.add("intro-back-normal");
-    document.getElementById("intro-back").classList.remove("intro-back-line");
-
-    // For container
-    document
-      .getElementById("intro-back-container")
-      .classList.add("intro-back-container-normal");
-    document
-      .getElementById("intro-back-container")
-      .classList.remove("intro-back-container-line");
-  } else {
-    document.getElementById("intro-back").classList.add("intro-back-line");
-    document.getElementById("intro-back").classList.remove("intro-back-normal");
-
-    // For container
-    document
-      .getElementById("intro-back-container")
-      .classList.add("intro-back-container-line");
-    document
-      .getElementById("intro-back-container")
-      .classList.remove("intro-back-container-normal");
-  }
-}
-
-// Dynamically add projects
-const LIST_OF_PROJECTS = [
+// Dynamically add scratch projects
+const LIST_OF_SCRATCH_PROJECTS = [
   {
     id: 556395402,
     title: "Ping OS 4",
@@ -66,15 +91,17 @@ const LIST_OF_PROJECTS = [
   },
 ];
 
-const projects_section = document.querySelector("#scratch-projects-section");
-const projects_container = document.createElement("ul");
-projects_container.id = "projectsGroup";
-projects_section.appendChild(projects_container);
+const scratch_projects_container_div = document.querySelector(
+  "#scratch-projects-container"
+);
+const scratch_projects_list = document.createElement("ul");
+scratch_projects_list.id = "scratch_projects_list";
+scratch_projects_container_div.appendChild(scratch_projects_list);
 
-for (project of LIST_OF_PROJECTS) {
+for (project of LIST_OF_SCRATCH_PROJECTS) {
   const projectElement = document.createElement("li");
-  projectElement.classList.add("project");
-  projectElement.innerHTML = `<a href="https://scratch.mit.edu/projects/${project.id}/"><div class="projectImageContainer"><img src="https://uploads.scratch.mit.edu/projects/thumbnails/${project.id}.png" alt="Thumbnail of the project '${project.title}'"></div></a><br>
+  projectElement.classList.add("scratch_project");
+  projectElement.innerHTML = `<a href="https://scratch.mit.edu/projects/${project.id}/"><div class="projectImageContainer"><img src="https://uploads.scratch.mit.edu/projects/thumbnails/${project.id}.png" alt="Thumbnail of the project '${project.title}'"></div></a>
             <a href="https://scratch.mit.edu/projects/${project.id}/" class="projectLink">${project.title}</a>`;
-  document.getElementById("projectsGroup").appendChild(projectElement);
+  document.getElementById("scratch_projects_list").appendChild(projectElement);
 }
