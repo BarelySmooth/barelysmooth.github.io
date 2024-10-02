@@ -1,0 +1,281 @@
+/* temporarily removing this since i already have inter installed on my device */
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* init variables */
+:root {
+  --background-color: #36353e;
+  --foreground-color: #403e52;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+div.top-flex-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+div.title-panel {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 30px 30px 0px;
+  background-color: var(--foreground-color);
+  flex-direction: column;
+}
+
+div.top-flex-div h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #a95eff, #ff975b);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+div.top-flex-div img {
+  width: 150px;
+}
+
+div.top-flex-div div.img-container {
+  width: 150px;
+
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 100em;
+}
+
+/* Credit: https://css-tricks.com/different-ways-to-get-css-gradient-shadows/ */
+div.top-flex-div div.img-container::before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: conic-gradient(
+    from 90deg at 40% -25%,
+    #ffd700,
+    #f79d03,
+    #ee6907,
+    #e6390a,
+    #de0d0d,
+    #d61039,
+    #cf1261,
+    #c71585,
+    #cf1261,
+    #d61039,
+    #de0d0d,
+    #ee6907,
+    #f79d03,
+    #ffd700,
+    #ffd700,
+    #ffd700
+  );
+  transform: translate3d(0px, -2px, -1px) scale(0.9) rotate(360deg);
+  filter: blur(25px);
+  border-radius: inherit;
+  pointer-events: none;
+  animation-name: animateAvatarShadow;
+  animation-duration: 1.5s;
+}
+
+@keyframes animateAvatarShadow {
+  from {
+    filter: blur(0px);
+    transform: translate3d(0px, -2px, -1px) scale(0.9) rotate(0deg);
+  }
+
+  to {
+    filter: blur(25px);
+    transform: translate3d(0px, -2px, -1px) scale(0.9) rotate(360deg);
+  }
+}
+
+div.content-panel {
+  background-color: var(--background-color);
+  height: 100vh;
+  overflow-y: auto;
+  width: 70%;
+}
+
+.content-panel-blob {
+  color: rgb(209, 207, 219);
+  font-size: 1.6rem;
+  border-radius: 30px;
+  margin: 30px;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--foreground-color);
+}
+
+.content-panel-blob h2.gradient-h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #a95eff, #ff975b);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.content-panel-blob hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba(209, 207, 219, 0.5);
+  margin: 5px 0;
+  padding: 0;
+}
+
+#introduction {
+  border-radius: 0px 0px 30px 30px;
+  margin: 0 30px 30px 30px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#introduction p:first-child {
+  margin-top: 0px;
+}
+
+#introduction p:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODING PROJECTS */
+#coding-projects ul {
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+#coding-projects li.coding_project {
+  list-style-type: none;
+  display: flex;
+  background-color: #323039;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 1rem;
+  /* justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--foreground-color);
+  margin: 10px 0; */
+}
+
+#coding-projects li.coding_project img.project-image {
+  height: 150px;
+  min-width: 230px;
+}
+
+#coding-projects .title-and-status-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#coding-projects li.coding_project h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#coding-projects .pill {
+  font-size: 0.8rem !important;
+  font-weight: normal;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 2px 10px;
+}
+
+#coding-projects .pill.actively-maintained-pill,
+#coding-projects .pill.in-development-pill {
+  color: #4cbb85;
+  border-color: rgb(110, 190, 158);
+  background-color: #2c70527f;
+}
+
+#coding-projects .pill.unmaintained-pill {
+  color: #e8a2a2;
+  border-color: rgb(255, 0, 0);
+  background-color: #ca3c3c7f;
+}
+
+#coding-projects li.coding_project p:not(.pill) {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#coding-projects .coding-project-details {
+  width: 100%;
+}
+
+#coding-projects .project-links {
+  background-color: #36353e;
+  padding: 10px;
+  width: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#coding-projects .project-links img {
+  width: 30px;
+  height: 30px;
+
+  /* to make it white in colour */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(181deg)
+    brightness(102%) contrast(103%);
+}
+
+/* SCRATCH PROJECTS */
+#scratch-projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+#scratch-projects li {
+  list-style-type: none;
+  /* display: inline-block; */
+}
+
+#scratch-projects li img {
+  width: 240px;
+  height: 180px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+
+  /* disable dragging of image */
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#scratch-projects li img:hover {
+  transform: scale(1.1);
+}
+
+#scratch-projects li img:active {
+  transform: scale(1.05);
+}
+
+#scratch-projects li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  /* center align */
+  display: block;
+  text-align: center;
+}
