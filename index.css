@@ -39,9 +39,10 @@ div.top-flex-div h1 {
   background: linear-gradient(90deg, #a95eff, #ff975b);
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  transition: 0.2s;
 }
 
-div.top-flex-div img {
+div.top-flex-div .title-panel img {
   width: 150px;
 }
 
@@ -213,6 +214,7 @@ div.content-panel {
 
 #coding-projects .coding-project-details {
   width: 100%;
+  min-width: 360px;
 }
 
 #coding-projects .project-links {
